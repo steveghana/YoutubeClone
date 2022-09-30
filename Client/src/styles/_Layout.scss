@@ -1,8 +1,10 @@
 .layout {
   &_container {
     display: flex;
+    justify-content: right;
   }
   &_main {
-    width: 100%;
+    min-width: 90vw;
+    margin-bottom: auto;
   }
 }
