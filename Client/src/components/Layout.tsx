@@ -9,11 +9,11 @@ const LayoutStyles = makeStyles((theme) => ({
   main: {},
 }));
 const Layout = ({ children }: any) => {
-  const classes = LayoutStyles();
+  // const classes = LayoutStyles();
   return (
-    <div className={classes.container}>
+    <div className="layout_container">
       <Sidebar />
-      <Grid item className={classes.main}>
+      <Grid item className="layout_main">
         <Appbar />
         <div>{children}</div>
       </Grid>
