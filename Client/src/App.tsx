@@ -1,5 +1,5 @@
 import Layout from "./components/Layout";
-
+import "./styles/index.scss";
 function App() {
   //Routes
   return (
