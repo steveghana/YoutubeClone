@@ -1,5 +1,5 @@
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import React, { useCallback, useRef, useState } from "react";
+import React, { useCallback, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import {
   Menu,
@@ -10,6 +10,7 @@ import {
 } from "@material-ui/icons";
 import { FaHome, FaCompass } from "react-icons/fa";
 import Logo from "./Logo";
+import { StateContextProvider, useStateContext } from "../Context/context";
 const sidebarData = [
   { text: "Home", icon: <FaHome size={25} /> },
   { text: "Explore", icon: <FaCompass size={25} />, path: "/explore" },
@@ -36,38 +37,17 @@ const sidebarData = [
 ];
 
 const Sidebar = () => {
-  // let toggleSidebar = useRef(false);
-  const [toggleSidebar, settoggleSidebar] = useState(false);
-
-  // const toggleRef = React.useRef(null);
-  const expandSideBar = () => settoggleSidebar((prev) => !prev);
-
-  // const expandSideBar = useCallback(() => {
-  //   toggleSidebar.current = !toggleSidebar.current;
-  //   //@ts-ignore
-  //   let toggleSidebarClass = toggleRef?.current?.classList;
-  //   //@ts-ignore
-  //   let toggleSidebarItemClass = toggleRef?.current?.querySelectorAll(
-  //     ".sidebar_container_item"
-  //   );
-  //   let toggleSidebarLogo = document.querySelector(
-  //     ".sidebar_logo"
-  //   ) as HTMLDivElement;
-
-  //   if (toggleSidebar.current) {
-  //     toggleSidebarClass.add("toggle");
-  //     toggleSidebarLogo.classList.remove("sidebar_nonVisible");
-  //     toggleSidebarItemClass.forEach((item: HTMLDivElement, idx: string) => {
-  //       item.classList.add("itemRow");
-  //     });
-  //   } else {
-  //     toggleSidebarClass.remove("toggle");
-  //     toggleSidebarLogo.classList.add("sidebar_nonVisible");
-  //     toggleSidebarItemClass.forEach((item: HTMLDivElement, idx: string) => {
-  //       item.classList.remove("itemRow");
-  //     });
-  //   }
-  // }, [toggleSidebar]);
+  const { toggleSidebar, settoggleSidebar, expandSideBar } = useStateContext();
+  useEffect(() => {
+    window.addEventListener("click", () => {
+      if (toggleSidebar) {
+        settoggleSidebar(false);
+      }
+    });
+    return () => {
+      settoggleSidebar(false);
+    };
+  }, []);
   return (
     <Grid
       /* ref={toggleRef} */ style={{

@@ -5,6 +5,10 @@
   }
   &_main {
     min-width: 93vw;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
     margin-bottom: auto;
   }
 }

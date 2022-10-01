@@ -9,24 +9,27 @@ import {
   Library,
   History,
 } from "./Pages/exports";
+import { StateContextProvider } from "./Context/context";
 
 function App() {
   //Routes
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/explore" element={<Explore />} />
-            <Route path="/shorts" element={<Shorts />} />
-            <Route path="/subscriptions" element={<Subscription />} />
-            <Route path="/library" element={<Library />} />
-            <Route path="/history" element={<History />} />
-          </Routes>
-        </Layout>
-      </BrowserRouter>
-    </div>
+    <StateContextProvider>
+      <div className="App">
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/explore" element={<Explore />} />
+              <Route path="/shorts" element={<Shorts />} />
+              <Route path="/subscriptions" element={<Subscription />} />
+              <Route path="/library" element={<Library />} />
+              <Route path="/history" element={<History />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </div>
+    </StateContextProvider>
   );
 }
 

@@ -1,7 +1,12 @@
 import React from "react";
+import SliderBar from "../components/SliderBar";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <SliderBar />
+    </div>
+  );
 };
 
 export default Home;
