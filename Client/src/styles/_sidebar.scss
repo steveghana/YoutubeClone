@@ -1,8 +1,8 @@
 .sidebar {
   &_container {
-    padding: 1.5rem 1rem 1.5rem 0;
     display: flex;
     width: 10vw;
+    padding: 1.5rem 0;
     position: relative;
     flex-direction: column;
     gap: 1.5rem;
@@ -13,6 +13,9 @@
       flex-direction: column;
       padding: 0.2rem 1rem;
       align-items: center;
+    }
+    .hover {
+      padding: 1.5rem 1rem 1.5rem 0;
       &:hover {
         background-color: red;
         width: 100%;
@@ -21,28 +24,13 @@
   }
   &_logo {
     margin-right: auto;
+    display: none;
     flex-grow: 1;
   }
   &_hameburger-Toggle {
-    display: flex;
     justify-content: center;
+    display: flex;
     gap: 1.5rem;
     padding: 0 1.2rem 0 1.4rem;
   }
-}
-.sidebar_nonVisible {
-  display: none;
-}
-.toggle {
-  min-width: 25vw;
-  position: absolute;
-  left: 0%;
-}
-.itemRow {
-  flex-direction: row !important;
-  justify-content: flex-start;
-  align-items: center !important;
-  gap: 1.5rem;
-  height: 39px;
-  padding: 0 0.7rem 0 1.5rem;
 }

@@ -8,7 +8,7 @@ const Logo = () => {
       className="appbar_logo"
     >
       <FaYoutube color="red" size={30} />
-      <Typography>YOUTUBE</Typography>
+      <Typography style={{ font: "1.4rem Oswald" }}>YOUTUBE</Typography>
     </div>
   );
 };

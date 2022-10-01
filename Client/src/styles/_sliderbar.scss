@@ -1,0 +1,10 @@
+.sliderBar {
+  &_container {
+    padding: 1rem;
+  }
+  &_items {
+    padding: 0.4rem 1rem;
+    border-radius: 20%;
+    border: 1px solid black;
+  }
+}
