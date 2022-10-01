@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { SearchOutlined } from "@material-ui/icons";
 import { makeStyles, Typography } from "@material-ui/core";
+import Logo from "./Logo";
 const appbarStyles = makeStyles((theme) => ({
   appbar: {
     display: "flex",
@@ -28,10 +29,7 @@ const Appbar = () => {
   const classes = appbarStyles();
   return (
     <nav className="appbar_container">
-      <div className="appbar_logo">
-        <FaYoutube color="red" size={30} />
-        <Typography>YOUTUBE</Typography>
-      </div>
+      <Logo />
       <div className="appbar_wrapper">
         <div className="appbar_searchContainer">
           <input
