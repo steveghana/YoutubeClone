@@ -12,7 +12,7 @@ import { FaHome, FaCompass } from "react-icons/fa";
 import Logo from "./Logo";
 import { StateContextProvider, useStateContext } from "../Context/context";
 const sidebarData = [
-  { text: "Home", icon: <FaHome size={25} /> },
+  { text: "Home", icon: <FaHome size={25} />, path: "/" },
   { text: "Explore", icon: <FaCompass size={25} />, path: "/explore" },
   {
     text: "Shorts",
