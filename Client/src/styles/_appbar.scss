@@ -1,0 +1,43 @@
+.appbar {
+  &_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 0;
+    align-items: center;
+  }
+  &_logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  &_wrapper {
+    max-width: 50vw;
+    width: 100%;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  &_microphone {
+    padding: 0.6rem;
+    border-radius: 500%;
+    background-color: gray;
+  }
+  &_searchContainer {
+    background-color: gray;
+    padding: 0.05rem;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    input {
+      width: 100%;
+      border: none;
+      padding: 0.7rem;
+      outline: none;
+    }
+  }
+  &_icons {
+    display: flex;
+    gap: 1rem;
+  }
+}
