@@ -64,7 +64,7 @@ const Sidebar = () => {
           style={{ display: toggleSidebar ? "block" : "none" }}
           className="sidebar_logo"
         >
-          <Logo />
+          <Logo toggleSidebar={toggleSidebar} />
         </div>
       </div>
       {sidebarData.map(({ icon, text, path }, itemidx) => (
