@@ -54,11 +54,12 @@ const Sidebar = () => {
         minWidth: toggleSidebar ? "19vw" : "initial",
         position: toggleSidebar ? "absolute" : "initial",
         left: toggleSidebar ? "0" : "unset",
+        zIndex: 2,
       }}
       className="sidebar_container"
     >
       <div onClick={expandSideBar} className="sidebar_hameburger-Toggle">
-        <Menu />
+        <Menu style={{ color: "white" }} />
         <div
           style={{ display: toggleSidebar ? "block" : "none" }}
           className="sidebar_logo"

@@ -1,15 +1,28 @@
-import { Typography } from "@material-ui/core";
 import React from "react";
-import Swiper from "swiper";
+import { Typography } from "@material-ui/core";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper";
+import "swiper/css";
+import "swiper/css/free-mode";
 const SliderBar = () => {
-  console.log(Array(13).map((item) => item));
   return (
     <div className="sliderBar_container">
-      {Array(12).map((item, i) => (
-        <Typography variant="caption" className="sliderBar_items" key={i}>
-          {item}
-        </Typography>
-      ))}
+      <Swiper
+        slidesPerView={11}
+        spaceBetween={10}
+        freeMode
+        centeredSlides
+        centeredSlidesBounds
+        modules={[FreeMode]}
+      >
+        {new Array(17).fill("Music").map((item, i) => (
+          <SwiperSlide className="sliderBar_items">
+            <Typography variant="caption" key={i}>
+              {item}
+            </Typography>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };
