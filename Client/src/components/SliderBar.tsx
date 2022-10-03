@@ -16,7 +16,7 @@ const SliderBar = () => {
         modules={[FreeMode]}
       >
         {new Array(17).fill("Music").map((item, i) => (
-          <SwiperSlide className="sliderBar_items">
+          <SwiperSlide key={i} className="sliderBar_items">
             <Typography variant="caption" key={i}>
               {item}
             </Typography>
