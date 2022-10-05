@@ -11,8 +11,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ErroBoundary Fallback={<ErrorScreen />}>
-      {/* <App /> */}
-      <SkeletonLoader />
+      <App />
+      {/* <SkeletonLoader /> */}
     </ErroBoundary>
   </React.StrictMode>
 );

@@ -1,0 +1,13 @@
+.home {
+  &_container {
+  }
+  &_main {
+    display: grid;
+    height: 100%;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    background-color: blue;
+  }
+}
