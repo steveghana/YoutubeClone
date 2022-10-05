@@ -1,14 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-
+import ErroBoundary from "ErrorHandling/ErrorBoundaries";
+import SkeletonLoader from "Loader/SkeletonLoader";
+import ErrorScreen from "ErrorHandling/ErrorScreen";
 import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <ErroBoundary Fallback={<ErrorScreen />}>
+      {/* <App /> */}
+      <SkeletonLoader />
+    </ErroBoundary>
   </React.StrictMode>
 );
 

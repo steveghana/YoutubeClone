@@ -7,8 +7,9 @@
     flex-direction: column;
     gap: 1.5rem;
     height: 100vh;
-    background: blue;
+    background: rgb(27, 27, 27);
     &_item {
+      color: white;
       display: flex;
       flex-direction: column;
       padding: 0.2rem 1rem;
@@ -18,6 +19,7 @@
       padding: 1.5rem 1rem 1.5rem 0;
       &:hover {
         background-color: red;
+        padding-right: 1rem;
         width: 100%;
       }
     }

@@ -2,13 +2,19 @@
   &_container {
     padding: 0.5rem 1rem;
     display: flex;
-    gap: 1.5rem;
     border-top: 1px solid black;
+    gap: 1.5rem;
     border-bottom: 1px solid black;
+  }
+  &_wrapper {
+    padding: 1rem;
   }
   &_items {
     padding: 0.4rem 1rem;
     border-radius: 100px;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
   }
 }

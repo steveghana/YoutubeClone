@@ -10,7 +10,6 @@ const LayoutStyles = makeStyles((theme) => ({
   main: {},
 }));
 const Layout = ({ children }: any) => {
-  // const classes = LayoutStyles();
   const { settoggleSidebar } = useStateContext();
   return (
     <div className="layout_container">
@@ -26,7 +25,7 @@ const Layout = ({ children }: any) => {
           style={{
             width: "100%",
             height: "20px",
-            background: "blue",
+            background: "black",
             marginTop: "auto",
           }}
           className="footer_container"
