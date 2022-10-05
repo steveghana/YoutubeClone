@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import SliderBar from "../components/SliderBar";
 import axios from "axios";
+import Video from "components/VideoItem/Video";
 
 const Home = () => {
   useEffect(() => {
@@ -177,8 +178,13 @@ const Home = () => {
     //   });
   }, []);
   return (
-    <div>
+    <div className="home_container">
       <SliderBar />
+      <div className="home_main">
+        {new Array(8).fill("").map((item, i) => (
+          <Video />
+        ))}
+      </div>
     </div>
   );
 };
