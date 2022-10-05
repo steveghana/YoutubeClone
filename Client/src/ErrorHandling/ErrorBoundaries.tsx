@@ -9,7 +9,7 @@ export default class ErroBoundary extends Component<ErrorProps> {
   static getDerivedStateFromError(error: string | object) {
     return { error };
   }
-  render() {
+  render(): React.ReactNode {
     const { error } = this.state;
     console.log(this.props);
     const { children, Fallback } = this.props as any;
