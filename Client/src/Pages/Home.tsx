@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import SliderBar from "../components/SliderBar";
 import axios from "axios";
-import Video from "components/VideoItem/Video";
+import Video from "components/Videos";
+import data from "../Youtube/videodetails.json";
+import { useStateContext } from "Context/context";
 
 const Home = () => {
   useEffect(() => {
@@ -177,12 +179,23 @@ const Home = () => {
     //     console.error(error);
     //   });
   }, []);
+
+  let negateStyles = 70 + 25 + 50;
   return (
     <div className="home_container">
       <SliderBar />
-      <div className="home_main">
-        {new Array(8).fill("").map((item, i) => (
-          <Video />
+      <div
+        style={{
+          height: `calc(100vh - ${negateStyles}px`,
+          overflowY: "scroll",
+          padding: "1rem",
+        }}
+        className="home_main"
+      >
+        {data.items.map((item, i) => (
+          <div key={i}>
+            <Video item={item} />
+          </div>
         ))}
       </div>
     </div>

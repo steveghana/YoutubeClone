@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Grid, makeStyles } from "@material-ui/core";
 import Sidebar from "./Sidebar";
 import Appbar from "./Appbar";
+import { fetchFromAPI } from "utils/fetchFromAPI";
 import { StateContextProvider, useStateContext } from "../Context/context";
 const LayoutStyles = makeStyles((theme) => ({
   container: {
@@ -11,6 +12,7 @@ const LayoutStyles = makeStyles((theme) => ({
 }));
 const Layout = ({ children }: any) => {
   const { settoggleSidebar } = useStateContext();
+
   return (
     <div className="layout_container">
       <Sidebar />
@@ -27,6 +29,7 @@ const Layout = ({ children }: any) => {
             height: "20px",
             background: "black",
             marginTop: "auto",
+            zIndex: "3",
           }}
           className="footer_container"
         ></footer>

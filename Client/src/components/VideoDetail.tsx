@@ -4,9 +4,35 @@ import ReactPlayer from "react-player";
 import { Typography, Box, Grid } from "@material-ui/core";
 import Videos from "./Videos";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
-interface Detail {}
+import { Details } from "@material-ui/icons";
+interface Detail {
+  snippet: Union["snippet"];
+  statistics: Union["statistics"];
+}
+type Union = {
+  snippet: {
+    title: string;
+    channelId: string;
+    channelTitle: string;
+  };
+  statistics: {
+    viewCount: string;
+    likeCount: string;
+  };
+};
 const VideoDetail = () => {
-  const [videoDetail, setVideoDetail] = useState("") as any;
+  let initial = {
+    snippet: {
+      title: "",
+      channelId: "",
+      channelTitle: "",
+    },
+    statistics: {
+      viewCount: "",
+      likeCount: "",
+    },
+  };
+  const [videoDetail, setVideoDetail] = useState<Detail>(initial);
   const [videos, setVideos] = useState(null);
   const { id } = useParams();
 
@@ -25,7 +51,7 @@ const VideoDetail = () => {
   const {
     snippet: { title, channelId, channelTitle },
     statistics: { viewCount, likeCount },
-  } = videoDetail;
+  } = videoDetail!;
 
   return (
     <Box minHeight="95vh">
