@@ -10,6 +10,7 @@ import {
 import { SearchOutlined } from "@material-ui/icons";
 import { makeStyles, Typography } from "@material-ui/core";
 import Logo from "./Logo";
+
 const appbarStyles = makeStyles((theme) => ({
   appbar: {
     display: "flex",
@@ -26,9 +27,10 @@ const appbarStyles = makeStyles((theme) => ({
   profile: {},
 }));
 const Appbar = () => {
+  const appbar = React.useRef(null) as React.LegacyRef<HTMLElement> | any;
   const classes = appbarStyles();
   return (
-    <nav className="appbar_container">
+    <nav ref={appbar} className="appbar_container">
       <Logo />
       <div className="appbar_wrapper">
         <div className="appbar_searchContainer">

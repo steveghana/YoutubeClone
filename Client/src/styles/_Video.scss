@@ -19,10 +19,10 @@
   &_views {
     display: flex;
   }
-  @include mixins.respond(tablet-landscape) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @include mixins.respond(mobile) {
-    grid-template-columns: 1fr;
-  }
+  // @include mixins.respond(tablet-landscape) {
+  //   grid-template-columns: 1fr 1fr;
+  // }
+  // @include mixins.respond(mobile) {
+  //   grid-template-columns: 1fr;
+  // }
 }

@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Typography } from "@material-ui/core";
+import { useStateContext } from "Context/context";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper";
+import { categories } from "utils/constants";
 import "swiper/css";
 import "swiper/css/free-mode";
+
 const SliderBar = () => {
+  const sliderBar = useRef(null) as React.LegacyRef<HTMLElement> | any;
+  const { setSelectedCategory } = useStateContext();
   return (
-    <div className="sliderBar_container">
+    <div ref={sliderBar} className="sliderBar_container">
       <Swiper
         slidesPerView={11}
         spaceBetween={10}
@@ -15,10 +20,14 @@ const SliderBar = () => {
         centeredSlidesBounds
         modules={[FreeMode]}
       >
-        {new Array(17).fill("Music").map((item, i) => (
-          <SwiperSlide key={i} className="sliderBar_items">
+        {categories.map(({ name }, i) => (
+          <SwiperSlide
+            onClick={() => setSelectedCategory(name)}
+            key={i}
+            className="sliderBar_items"
+          >
             <Typography variant="caption" key={i}>
-              {item}
+              {name}
             </Typography>
           </SwiperSlide>
         ))}

@@ -36,7 +36,7 @@ const sidebarData = [
   },
 ];
 
-const Sidebar = () => {
+const Sidebar = ({ setSelectedCategory }: any) => {
   const { toggleSidebar, settoggleSidebar, expandSideBar } = useStateContext();
   useEffect(() => {
     window.addEventListener("click", () => {
@@ -51,10 +51,10 @@ const Sidebar = () => {
   return (
     <Grid
       /* ref={toggleRef} */ style={{
-        minWidth: toggleSidebar ? "19vw" : "initial",
+        minWidth: toggleSidebar ? "auto" : "initial",
         position: toggleSidebar ? "absolute" : "initial",
         left: toggleSidebar ? "0" : "unset",
-        zIndex: 2,
+        zIndex: 5,
       }}
       className="sidebar_container"
     >
