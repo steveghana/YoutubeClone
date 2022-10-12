@@ -6,7 +6,7 @@ import Videos from "./Videos";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 interface Detail {}
 const VideoDetail = () => {
-  const [videoDetail, setVideoDetail] = useState("") as any;
+  const [videoDetail, setVideoDetail] = useState("");
   const [videos, setVideos] = useState(null);
   const { id } = useParams();
 
