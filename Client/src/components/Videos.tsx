@@ -1,26 +1,47 @@
 import React from "react";
-import { Grid, Box } from "@material-ui/core";
-
+import { Grid } from "@material-ui/core";
+// import SkeletonLoader from "Loader/SkeletonLoader";
+import ListSkeleton from "Loader/SkeletonList";
 import ChannelCard from "./ChannelCard";
 import VideoCard from "./VideoCard";
-const Videos = ({ videos, direction }: any) => {
-  if (!videos?.length) return <div>Loading...</div>;
+type Channel = {
+  videos: any;
+  // item: s;
+  marginTop?: string;
+  direction?: string;
+};
+type item = {
+  item: s;
+};
+type s = {
+  id: {
+    channelId: string;
+    videoId: string;
+  };
+  snippet: {
+    title: string;
+    thumbnails: {
+      high: { url: string };
+    };
+  };
+  statistics: {
+    subscriberCount: string;
+  };
+};
+const Videos: React.FC<Channel> = ({ videos, direction }) => {
+  if (!videos?.kind?.length) return <ListSkeleton />;
 
   return (
     <Grid
-      style={{
-        flexDirection: direction ? "row" : "column",
-        flexWrap: "wrap",
-        justifyContent: "start",
-        alignItems: "start",
-        gap: "2rem",
-      }}
+      container
+      justifyContent="space-evenly"
+      alignItems="flex-start"
     >
-      {videos.map((item: any, idx: number) => (
-        <Box key={idx}>
+      {videos.items.map((item: any, idx: number) => (
+        <div style={{ width: "auto", padding:"1rem 0" }} key={idx}>
           {item.id.videoId && <VideoCard video={item} />}
           {item.id.channelId && <ChannelCard channelDetail={item} />}
-        </Box>
+        </div>
       ))}
     </Grid>
   );

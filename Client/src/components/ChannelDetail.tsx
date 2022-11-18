@@ -25,7 +25,7 @@ const ChannelDetail = () => {
       setVideos(videosData?.items);
     };
 
-    fetchResults();
+    // fetchResults();
   }, [id]);
 
   return (

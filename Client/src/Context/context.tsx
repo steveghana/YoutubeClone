@@ -6,6 +6,7 @@ interface StateProps {
   setSelectedCategory: React.Dispatch<React.SetStateAction<string>>;
   expandSideBar: () => void;
   videos: null | object | string | Array<object>;
+  selectedCategory:string;
 }
 
 export const StateProvider = createContext<StateProps | undefined>(undefined);
@@ -28,8 +29,10 @@ export const StateContextProvider = ({ children }: any) => {
         toggleSidebar,
         settoggleSidebar,
         expandSideBar,
+        
         videos,
         setSelectedCategory,
+        selectedCategory,
       }}
     >
       {children}

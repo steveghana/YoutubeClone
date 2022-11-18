@@ -13,7 +13,7 @@ const SliderBar = () => {
   return (
     <div ref={sliderBar} className="sliderBar_container">
       <Swiper
-        slidesPerView={11}
+        slidesPerView='auto'
         spaceBetween={10}
         freeMode
         centeredSlides
@@ -26,7 +26,7 @@ const SliderBar = () => {
             key={i}
             className="sliderBar_items"
           >
-            <Typography variant="caption" key={i}>
+            <Typography  variant="caption" key={i}>
               {name}
             </Typography>
           </SwiperSlide>

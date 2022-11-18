@@ -2,8 +2,41 @@ import React from "react";
 import { Box, CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { demoProfilePicture } from "../utils/constants";
-
-const ChannelCard = ({ channelDetail, marginTop }: any) => (
+import { type } from "os";
+type Channel = {
+  channelDetail: any;
+  // {
+  //   id: {
+  //     channelId: string;
+  //   };
+  //   snippet: {
+  //     title: string;
+  //     thumbnails: {
+  //       high: { url: string };
+  //     };
+  //   };
+  //   statistics: {
+  //     subscriberCount: string;
+  //   };
+  // };
+  marginTop?: string;
+};
+type item = object;
+type nested = {
+  id: {
+    channelId: string;
+  };
+  snippet: {
+    title: string;
+    thumbnails: {
+      high: { url: string };
+    };
+  };
+  statistics: {
+    subscriberCount: string;
+  };
+};
+const ChannelCard: React.FC<Channel> = ({ channelDetail, marginTop }) => (
   <Box
     sx={{
       boxShadow: "none",
@@ -29,7 +62,7 @@ const ChannelCard = ({ channelDetail, marginTop }: any) => (
       >
         <CardMedia
           image={
-            channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture
+            channelDetail?.snippet.thumbnails.high.url || demoProfilePicture
           }
           style={{
             borderRadius: "50%",

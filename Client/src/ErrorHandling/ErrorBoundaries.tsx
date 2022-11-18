@@ -1,18 +1,27 @@
-import React, { Component } from "react";
+import React, { Component, ErrorInfo, ReactNode } from "react";
+import ErrorScreen from "./ErrorScreen";
 interface ErrorProps {
   Fallback: JSX.Element;
-  children: React.ReactNode;
+  children: ReactNode;
+}
+interface State {
+  hasError: boolean;
 }
 
-export default class ErroBoundary extends Component<ErrorProps> {
-  public state = { error: null };
-  static getDerivedStateFromError(error: string | object) {
-    return { error };
+export default class ErroBoundary extends Component<ErrorProps, State> {
+  public state: State = {
+    hasError: false,
+  };
+  static getDerivedStateFromError(_: Error | object): State {
+    return { hasError: true };
   }
-  render(): React.ReactNode {
-    const { error } = this.state;
-    const { children, Fallback } = this.props as any;
-    if (error) return <Fallback error={error} />;
-    return children;
+  public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+    console.log("uncaught Error", error, errorInfo);
+  }
+  public render() {
+    if (this.state.hasError) {
+      return <ErrorScreen />;
+    }
+    return this.props.children;
   }
 }

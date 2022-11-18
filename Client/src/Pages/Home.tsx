@@ -194,7 +194,7 @@ const Home = () => {
       >
         {data.items.map((item, i) => (
           <div key={i}>
-            <Video item={item} />
+            <Video videos={item} />
           </div>
         ))}
       </div>

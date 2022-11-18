@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Typography, Card, CardContent, CardMedia } from "@material-ui/core";
+import { Typography,  CardMedia, Avatar, useMediaQuery, Grid } from "@material-ui/core";
 
 import {
   demoThumbnailUrl,
@@ -15,31 +15,39 @@ const VideoCard = ({
     id: { videoId },
     snippet,
   },
-}: any) => (
-  <Card style={{ width: "100%", boxShadow: "none", borderRadius: "0" }}>
+}: any) => {
+  const isTablet = useMediaQuery("(max-width:530px)");
+  return(
+    <Grid sm={12} style={{ width:isTablet ?"80vw" :"240px",margin:'auto',  boxShadow: "none",  }}>
     <Link to={videoId ? `/video/${videoId}` : `/video/cV2gBU6hKfY`}>
-      <CardMedia
-        image={snippet?.thumbnails?.high?.url || demoThumbnailUrl}
-        style={{ width: "100%", height: "180px" }}
-      />
+      <div style={{ width:"100%",backgroundImage:   `url(${snippet?.thumbnails?.high?.url || demoThumbnailUrl})`, backgroundRepeat:"no-repeat", height:'200px', backgroundSize:'cover'}}>
+
+      </div>
+     
     </Link>
-    <CardContent style={{ backgroundColor: "#1E1E1E", height: "106px" }}>
-      <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
-        <Typography variant="subtitle1" style={{ color: "#FFF" }}>
+    <div style={{display:'flex',  gap:'.5rem', padding:'1rem 0'}} >
+      <Avatar/>
+      <div>
+
+      <Link style={{textDecoration:'none'}} to={videoId ? `/video/${videoId}` : demoVideoUrl}>
+        <Typography variant="subtitle1" style={{ color:"black" }}>
           {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
         </Typography>
       </Link>
       <Link
+      style={{textDecoration:'none'}}
         to={
           snippet?.channelId ? `/channel/${snippet?.channelId}` : demoChannelUrl
         }
       >
-        <Typography variant="subtitle2" color="secondary">
+        <Typography variant="subtitle2" style={{color:'gray'}}>
           {snippet?.channelTitle || demoChannelTitle}
         </Typography>
       </Link>
-    </CardContent>
-  </Card>
-);
+      </div>
+  </div>
+    </Grid>
+)
+};
 
 export default VideoCard;
