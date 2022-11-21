@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import ErroBoundary from "ErrorHandling/ErrorBoundaries";
-import SkeletonList from "Loader/SkeletonList";
+// import SkeletonList from "Loader/SkeletonList";
+import ListSkeleton from "Loader/SkeletonList";
 import ErrorScreen from "ErrorHandling/ErrorScreen";
 import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(
@@ -12,7 +13,6 @@ root.render(
   <React.StrictMode>
     <ErroBoundary Fallback={<ErrorScreen />}>
       <App />
-      {/* <SkeletonList /> */}
     </ErroBoundary>
   </React.StrictMode>
 );

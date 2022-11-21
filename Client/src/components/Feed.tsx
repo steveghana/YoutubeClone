@@ -1,33 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { Box, Grid, Typography } from "@material-ui/core";
+import { Box, Grid } from "@material-ui/core";
 import * as S from '../Youtube/home.json'
 import { fetchFromAPI } from "../utils/fetchFromAPI";
-import axios from 'axios'
+// import axios from 'axios'
 import SliderBar from "./SliderBar";
 import Videos from "./Videos";
 import { useStateContext } from "Context/context";
-import { VideocamSharp } from "@material-ui/icons";
+// import { Contents } from "Models";
+// import { VideocamSharp } from "@material-ui/icons";
+
 const Feed = () => {
  
-  const [videos, setVideos] = useState(null) as any;
-const {selectedCategory} = useStateContext()
+  const [videos, setVideos] = useState({videos:[]}) ;
+const {selectedCategory, setShowsideBar} = useStateContext()
   useEffect(() => {
-    const options = {
-      method: 'GET',
-      url: 'https://youtube138.p.rapidapi.com/channel/videos/',
-      params: {id: 'UCJ5v_MCY6GNUBTO8-D3XoAg', hl: 'en', gl: 'US'},
-      headers: {
-        'X-RapidAPI-Key': 'b5143b76dfmshdf9866dbee9bf98p1c34eajsn631b3255ff5e',
-        'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
-      }
-    };
-    
-    axios.request(options).then(function (response) {
-      console.log(response.data);
-      localStorage.setItem("autocompleted", JSON.stringify(response.data))
-    }).catch(function (error) {
-      console.error(error);
-    });
+    setShowsideBar(true)
+   fetchFromAPI('trending/', {lang: 'en', country: 'us', section: 'Now'}).then((data)=>{
+      setVideos(data)
+      console.log(data)
+     }) 
   }, [selectedCategory])
 
   return (

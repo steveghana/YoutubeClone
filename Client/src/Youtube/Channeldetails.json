@@ -1,180 +1,90 @@
 {
-    "artistBio": null,
-    "avatar": [
-        {
-            "height": 48,
-            "url": "https://yt3.ggpht.com/ytc/AMLnZu9vy3-XIqwir99cyhKS1DEFMHym75vGYRqvA9vmUbE=s48-c-k-c0x00ffffff-no-rj",
-            "width": 48
-        },
-        {
-            "height": 88,
-            "url": "https://yt3.ggpht.com/ytc/AMLnZu9vy3-XIqwir99cyhKS1DEFMHym75vGYRqvA9vmUbE=s88-c-k-c0x00ffffff-no-rj",
-            "width": 88
-        },
-        {
-            "height": 176,
-            "url": "https://yt3.ggpht.com/ytc/AMLnZu9vy3-XIqwir99cyhKS1DEFMHym75vGYRqvA9vmUbE=s176-c-k-c0x00ffffff-no-rj",
-            "width": 176
-        }
-    ],
-    "badges": [
-        {
-            "text": "Verified",
-            "type": "VERIFIED_CHANNEL"
-        }
-    ],
-    "banner": {
-        "desktop": [
-            {
-                "height": 175,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-                "width": 1060
-            },
-            {
-                "height": 188,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-                "width": 1138
-            },
-            {
-                "height": 283,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-                "width": 1707
-            },
-            {
-                "height": 351,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w2120-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-                "width": 2120
-            },
-            {
-                "height": 377,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w2276-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-                "width": 2276
-            },
-            {
-                "height": 424,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
-                "width": 2560
-            }
-        ],
-        "mobile": [
-            {
-                "height": 88,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w320-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj",
-                "width": 320
-            },
-            {
-                "height": 175,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w640-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj",
-                "width": 640
-            },
-            {
-                "height": 263,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w960-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj",
-                "width": 960
-            },
-            {
-                "height": 351,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w1280-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj",
-                "width": 1280
-            },
-            {
-                "height": 395,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w1440-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj",
-                "width": 1440
-            }
-        ],
-        "tv": [
-            {
-                "height": 180,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w320-fcrop64=1,00000000ffffffff-k-c0xffffffff-no-nd-rj",
-                "width": 320
-            },
-            {
-                "height": 480,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w854-fcrop64=1,00000000ffffffff-k-c0xffffffff-no-nd-rj",
-                "width": 854
-            },
-            {
-                "height": 720,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w1280-fcrop64=1,00000000ffffffff-k-c0xffffffff-no-nd-rj",
-                "width": 1280
-            },
-            {
-                "height": 1080,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w1920-fcrop64=1,00000000ffffffff-k-c0xffffffff-no-nd-rj",
-                "width": 1920
-            },
-            {
-                "height": 1192,
-                "url": "https://yt3.ggpht.com/CQXz5RyQAF1dR6ImTkuZg80kURxs8vdEqe3XgvFuz7yWMukUoz7SkjpPczDUz3ZurO-BYaEqWm8=w2120-fcrop64=1,00000000ffffffff-k-c0xffffffff-no-nd-rj",
-                "width": 2120
-            }
-        ]
-    },
-    "canonicalBaseUrl": "/@WWE",
-    "channelId": "UCJ5v_MCY6GNUBTO8-D3XoAg",
-    "country": null,
-    "description": "WWE on YouTube is your number one spot to catch WWE original shows and exclusives!\n\nWatch videos from all of your favorite WWE Superstars, backstage fallout from live shows including Raw, SmackDown, NXT and original shows such as Top 10, List This, WWE's The Bump and much more! \n\nSubscribe - https://goo.gl/2YO0Is\n\nStream WWE on Peacock https://pck.tv/2PIAQJI in the U.S. and on WWE Network http://wwe.yt/wwenetwork everywhere else.\n",
-    "hasBusinessEmail": false,
-    "joinedDate": "2007-05-10",
-    "joinedDateText": "Joined May 10, 2007",
-    "keywords": [
-        "wrestling",
-        "submission wrestling",
-        "wwe",
-        "व्यावसायिक कुश्ती",
-        "professional wrestling",
-        "مصارعة المحترفين",
-        "الرياضة القتالية",
-        "finishing moves",
-        "चालें परिष्करण",
-        "الانتهاء",
-        "من",
-        "التحركاتالانتهاء",
-        "التحركات",
-        "wrestler",
-        "network",
-        "Raw",
-        "SmackDown",
-        "WrestleMania",
-        "SummerSlam"
-    ],
+    "channel_id": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+    "title": "Linus Tech Tips",
+    "description": "Looking for a Tech YouTuber?\n\nLinus Tech Tips is a passionate team of \"professionally curious\" experts in consumer technology and video production which aims to inform and educate people of all ages through our entertaining videos. We create product reviews, step-by-step computer build guides, and a variety of other tech-focused content.\n\nSchedule:\nNew videos every Saturday to Thursday @ 10:00am Pacific\nLive WAN Show podcasts every Friday @ ~5:00pm Pacific\n\n",
+    "subscriber_count": "14.9M subscribers",
     "links": [
-        {
-            "icon": "https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcR2Ly_siMJWnRW2XdwZLUxTiwlB4ctsmIm2YY-OWLOB-dBxxb3_BeqpkqbVcZpX52-O9dMEj7LvWBwVkppnyX6MYvYi--M0bnMCcB_G4iis1ueI2asbUA",
-            "targetUrl": "https://www.peacocktv.com/sports/wwe?cid=2101sportswweprtnrgrmktyt1172&utm_campaign=2101sportswwe&utm_source=yt&utm_medium=prtnrgrmkt_yt_customcontent_aboutlink&utm_term=wwe&utm_content=wwechannel",
-            "title": "WWE on Peacock"
-        },
-        {
-            "icon": "https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcT7H1ONQ3rAUqi4TUEh9i-1CTF6Wpjx0mqi97NarEByH7id0B1kOddSAIFO0Tjsva1dtKRMgHZZ2MFPJMOao6UgWn48Yn2zpKyn1fKP1EgC",
-            "targetUrl": "http://www.wwe.com/wwenetwork?utm_source=YouTube%20&utm_medium=YTannotation&utm_campaign=YouTubeBanner",
-            "title": "WWE Network"
-        },
-        {
-            "icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn:ANd9GcSxUwGjsJZApoUKonOfNzxpFkEMyf29jwvspkLH1CA-JP5Nx06tcApyuGcjdsPZWzHuoyTRot1jS2gOtE_pzWKSSaJg0t0MtrRw6u7ZcItl78fGxuhb",
-            "targetUrl": "https://www.facebook.com/wwe",
-            "title": "WWE on Facebook"
-        },
-        {
-            "icon": "https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcTCl87OfLKVJ9rK8xDL2fO43Nn-qwO3MZqhD6Va_y_Dj4NQN5vi_7wfFsqVPVk5OJarybTLaqbvqdn3Oj1nmlMBa_srPR9cF0lTX47Loj-ftw",
-            "targetUrl": "https://twitter.com/wwe",
-            "title": "WWE on Twitter"
-        },
-        {
-            "icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn:ANd9GcSfLSwm05yS0BK4Kb28e-NTcQAsNLQfDCkRW2BwGzQ_4QLgT3HvRwy5O9kLRnUU-QhzvJantOSGhq8NOQp7EHd_WEvUNR6WW1Pp0THXuSRzNiJgToeoCA",
-            "targetUrl": "https://www.instagram.com/wwe/",
-            "title": "WWE on Instagram"
-        },
-        {
-            "icon": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn:ANd9GcSFlbYqhtyMeV1vHT8M_qebDgOkM3uyTo4Zp8HBUWXW1YlyzmlmYQKNUQmAbr90Xn8uCGL1KG3dZY__P6fU8pJl6q6YmZ4Fim3tZNQL660Ykqo",
-            "targetUrl": "https://shop.wwe.com/",
-            "title": "WWE Shop"
-        }
+      {
+        "name": "Merch",
+        "endpoint": "https://www.lttstore.com/"
+      },
+      {
+        "name": "Facebook",
+        "endpoint": "http://www.facebook.com/LinusTech"
+      },
+      {
+        "name": "Twitter",
+        "endpoint": "http://twitter.com/LinusTech"
+      },
+      {
+        "name": "Twitch",
+        "endpoint": "https://www.twitch.tv/linustech"
+      },
+      {
+        "name": "Instagram",
+        "endpoint": "https://www.instagram.com/linustech"
+      },
+      {
+        "name": "Community Forum",
+        "endpoint": "http://www.linustechtips.com"
+      },
+      {
+        "name": "TikTok",
+        "endpoint": "https://www.tiktok.com/@linustech"
+      }
     ],
-    "stats": {
-        "subscribers": 91900000,
-        "subscribersText": "91.9M subscribers",
-        "views": 72469277623
-    },
-    "title": "WWE"
-}
+    "avatar": [
+      {
+        "url": "https://yt3.ggpht.com/ytc/AMLnZu_qOpMK0tGNMCnReaXVp4ZvmNEIXn9eKeBGA_x-wQ=s48-c-k-c0x00ffffff-no-rj",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "url": "https://yt3.ggpht.com/ytc/AMLnZu_qOpMK0tGNMCnReaXVp4ZvmNEIXn9eKeBGA_x-wQ=s88-c-k-c0x00ffffff-no-rj",
+        "width": 88,
+        "height": 88
+      },
+      {
+        "url": "https://yt3.ggpht.com/ytc/AMLnZu_qOpMK0tGNMCnReaXVp4ZvmNEIXn9eKeBGA_x-wQ=s176-c-k-c0x00ffffff-no-rj",
+        "width": 176,
+        "height": 176
+      }
+    ],
+    "banner": [
+      {
+        "url": "https://yt3.ggpht.com/NXaFVEkrkdGsQcjLvmI8iQuzKFVlZJX770IT4C77dmQr0PI5LpZuhATjJf2yWXYgBQP8EwVBgTk=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+        "width": 1060,
+        "height": 175
+      },
+      {
+        "url": "https://yt3.ggpht.com/NXaFVEkrkdGsQcjLvmI8iQuzKFVlZJX770IT4C77dmQr0PI5LpZuhATjJf2yWXYgBQP8EwVBgTk=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+        "width": 1138,
+        "height": 188
+      },
+      {
+        "url": "https://yt3.ggpht.com/NXaFVEkrkdGsQcjLvmI8iQuzKFVlZJX770IT4C77dmQr0PI5LpZuhATjJf2yWXYgBQP8EwVBgTk=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+        "width": 1707,
+        "height": 283
+      },
+      {
+        "url": "https://yt3.ggpht.com/NXaFVEkrkdGsQcjLvmI8iQuzKFVlZJX770IT4C77dmQr0PI5LpZuhATjJf2yWXYgBQP8EwVBgTk=w2120-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+        "width": 2120,
+        "height": 351
+      },
+      {
+        "url": "https://yt3.ggpht.com/NXaFVEkrkdGsQcjLvmI8iQuzKFVlZJX770IT4C77dmQr0PI5LpZuhATjJf2yWXYgBQP8EwVBgTk=w2276-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+        "width": 2276,
+        "height": 377
+      },
+      {
+        "url": "https://yt3.ggpht.com/NXaFVEkrkdGsQcjLvmI8iQuzKFVlZJX770IT4C77dmQr0PI5LpZuhATjJf2yWXYgBQP8EwVBgTk=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+        "width": 2560,
+        "height": 424
+      }
+    ],
+    "verified": true,
+    "has_business_email": true,
+    "view_count": "6,369,681,178 views",
+    "country": "Canada",
+    "creation_date": "Nov 25, 2008"
+  }

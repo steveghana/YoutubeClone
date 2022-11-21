@@ -2,41 +2,16 @@ import React from "react";
 import { Box, CardContent, CardMedia, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { demoProfilePicture } from "../utils/constants";
-import { type } from "os";
 type Channel = {
   channelDetail: any;
-  // {
-  //   id: {
-  //     channelId: string;
-  //   };
-  //   snippet: {
-  //     title: string;
-  //     thumbnails: {
-  //       high: { url: string };
-  //     };
-  //   };
-  //   statistics: {
-  //     subscriberCount: string;
-  //   };
-  // };
+  
   marginTop?: string;
 };
-type item = object;
-type nested = {
-  id: {
-    channelId: string;
-  };
-  snippet: {
-    title: string;
-    thumbnails: {
-      high: { url: string };
-    };
-  };
-  statistics: {
-    subscriberCount: string;
-  };
-};
-const ChannelCard: React.FC<Channel> = ({ channelDetail, marginTop }) => (
+
+const ChannelCard: React.FC<Channel> = ({ channelDetail, marginTop }) => {
+  console.log(channelDetail);
+  
+  return(
   <Box
     sx={{
       boxShadow: "none",
@@ -50,7 +25,7 @@ const ChannelCard: React.FC<Channel> = ({ channelDetail, marginTop }) => (
       marginTop,
     }}
   >
-    <Link to={`/channel/${channelDetail?.id?.channelId}`}>
+    {/* <Link to={`/channel/${author?.channelId}`}> */}
       <CardContent
         style={{
           display: "flex",
@@ -62,7 +37,7 @@ const ChannelCard: React.FC<Channel> = ({ channelDetail, marginTop }) => (
       >
         <CardMedia
           image={
-            channelDetail?.snippet.thumbnails.high.url || demoProfilePicture
+           channelDetail?.avatar[0]?.url || demoProfilePicture
           }
           style={{
             borderRadius: "50%",
@@ -71,18 +46,11 @@ const ChannelCard: React.FC<Channel> = ({ channelDetail, marginTop }) => (
             border: "1px solid #e3e3e3",
           }}
         />
-        <Typography variant="h6">{channelDetail?.snippet?.title} </Typography>
-        {channelDetail?.statistics?.subscriberCount && (
-          <Typography>
-            {parseInt(
-              channelDetail?.statistics?.subscriberCount
-            ).toLocaleString("en-US")}{" "}
-            Subscribers
-          </Typography>
-        )}
+        {/* <Typography variant="h6">{author?.title} </Typography> */}
+        
       </CardContent>
-    </Link>
+    {/* </Link> */}
   </Box>
-);
+)};
 
 export default ChannelCard;

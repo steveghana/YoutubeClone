@@ -1,12 +1,12 @@
 .sidebar {
   &_container {
-    display: flex;
-    width: 7vw;
-    padding: 1.5rem 0;
+    width: auto;
+    padding: 1.5rem .3rem;
     position: relative;
     flex-direction: column;
     gap: 1.5rem;
     height: 100vh;
+    margin-right: auto;
     background: rgb(27, 27, 27);
     &_item {
       color: white;

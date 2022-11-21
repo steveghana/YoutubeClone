@@ -2,9 +2,9 @@
   &_container {
     padding: 0.5rem 1rem;
     display: flex;
-    border-top: 1px solid black;
+    border-top: 1px solid gray;
     gap: 1.5rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid gray;
   }
   &_wrapper {
     padding: 1rem;
@@ -13,8 +13,10 @@
     padding: 0.4rem 0;
     width: 120px;
     border-radius: 100px;
-    border: 1px solid black;
+    border: 1.5px solid rgb(255, 255, 255);
+    background-color: gray;
     display: flex;
+    color:white;
     justify-content: center;
     cursor: pointer;
   }

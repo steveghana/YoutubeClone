@@ -36,8 +36,9 @@ const sidebarData = [
   },
 ];
 
-const Sidebar = ({ setSelectedCategory }: any) => {
-  const { toggleSidebar, settoggleSidebar, expandSideBar } = useStateContext();
+const Sidebar = () => {
+ 
+  const { toggleSidebar, settoggleSidebar, expandSideBar, setSelectedCategory, showSidebar } = useStateContext();
   useEffect(() => {
     window.addEventListener("click", () => {
       if (toggleSidebar) {
@@ -55,6 +56,7 @@ const Sidebar = ({ setSelectedCategory }: any) => {
         position: toggleSidebar ? "absolute" : "initial",
         left: toggleSidebar ? "0" : "unset",
         zIndex: 5,
+        display: !showSidebar ? 'none' : 'flex'
       }}
       className="sidebar_container"
     >

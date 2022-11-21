@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Typography } from "@material-ui/core";
+import { Typography, useMediaQuery } from "@material-ui/core";
 import { useStateContext } from "Context/context";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper";
@@ -8,12 +8,14 @@ import "swiper/css";
 import "swiper/css/free-mode";
 
 const SliderBar = () => {
-  const sliderBar = useRef(null) as React.LegacyRef<HTMLElement> | any;
+  const sliderBar = useRef(null) as React.LegacyRef<HTMLDivElement> ;
   const { setSelectedCategory } = useStateContext();
+  const isTablet = useMediaQuery("(max-width:530px)");
+
   return (
     <div ref={sliderBar} className="sliderBar_container">
       <Swiper
-        slidesPerView='auto'
+        slidesPerView={ isTablet? 5 :12}
         spaceBetween={10}
         freeMode
         centeredSlides
